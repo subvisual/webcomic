@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/subvisual/webcomic#readme",
   "dependencies": {
+    "gsap": "^1.18.0",
     "scrollmagic": "^2.0.5"
   }
 }
