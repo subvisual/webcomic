@@ -1,19 +1,31 @@
-$(function () { // wait for document ready
+$(function () {
+  var $hero = $('#hero');
   var controller = new ScrollMagic.Controller();
 
-  // var scene = new ScrollMagic.Scene({
-  //   offset: 100, // start scene after scrolling for 100px
-  //   duration: 400 // pin the element for 400px of scrolling
-  // })
-
   var scene = new ScrollMagic.Scene({
-    triggerElement: '#pinned-trigger1', // starting scene, when reaching this element
-    duration: 200 // pin the element for a total of 400px
+    triggerElement: "#pinned-trigger1",
+    duration: $(document).height() + $hero.height(),
+    triggerHook: "onLeave",
   })
-  .setPin('#pinned-element1') // the element we want to pin
-  .addIndicators(); // add indicators (requires plugin)
+  .setPin("#pinned-element1")
+  .addIndicators();
 
-  // Add Scene to ScrollMagic Controller
-  controller
-    .addScene(scene);
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: "#pinned-trigger1",
+    duration: '200%',
+    triggerHook: 0.4,
+  })
+  .setTween("#frame-1", {
+    css: {
+      scale: '3.5%',
+      y: '150px',
+    },
+    ease: Linear.easeNone,
+  })
+  .addIndicators();
+
+  controller.addScene([
+    scene,
+    scene2,
+  ]);
 });

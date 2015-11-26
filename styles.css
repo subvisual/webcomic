@@ -1,16 +1,15 @@
-.big {
-  height: 500px;
-  background: blue;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+
+  background: #212121;
+  color: #fff;
+
+  font-size: 40px;
 }
 
-.small {
-  height: 100px;
-  background: purple;
-}
-
-.element {
-  height: 800px;
-  margin: 20px;
-
-  background: red;
+.frame-1 {
+  max-width: 100%;
 }
