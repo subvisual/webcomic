@@ -13,3 +13,17 @@
 .frame-1 {
   max-width: 100%;
 }
+
+#pinned-element1 {
+  position: relative;
+}
+
+.bubble {
+  position: absolute;
+  left: 100%;
+  z-index: 500;
+  width: 300px; // not the actual real value
+}
+
+#bubble-1 {
+}
