@@ -1,0 +1,22 @@
+{
+  "name": "webcomic",
+  "version": "1.0.0",
+  "description": "Awsomeness",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subvisual/webcomic.git"
+  },
+  "keywords": [
+    "awsome"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subvisual/webcomic/issues"
+  },
+  "homepage": "https://github.com/subvisual/webcomic#readme"
+}
