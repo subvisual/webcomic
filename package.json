@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/subvisual/webcomic/issues"
   },
-  "homepage": "https://github.com/subvisual/webcomic#readme"
+  "homepage": "https://github.com/subvisual/webcomic#readme",
+  "dependencies": {
+    "scrollmagic": "^2.0.5"
+  }
 }
