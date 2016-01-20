@@ -11,5 +11,27 @@
 }
 
 .frame-1 {
+  position: relative;
   max-width: 100%;
+  z-index: -1;
+}
+
+#bubble-1,
+#bubble-2 {
+  width: 230px;
+}
+
+#bubble-1 {
+  position: absolute;
+  left: 100%;
+  top: 20%;
+  z-index: 2;
+}
+
+#bubble-2 {
+  position: absolute;
+  left: 85%;
+  top: 28%;
+  opacity: 0;
+  z-index: 1
 }
